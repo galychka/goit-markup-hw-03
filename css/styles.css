@@ -17,7 +17,14 @@ body {
 }
 
 h1,h2,h3,h4,p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 img {
@@ -25,6 +32,10 @@ img {
 }
 
 .list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -32,6 +43,7 @@ img {
 
 .link {
     text-decoration: none;
+    display: flex;
 }
 
 button {
@@ -51,7 +63,11 @@ button {
     align-items: center;
 }
 
-.main-header {}
+.main-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
 
 .main-nav {
     display: flex;
@@ -64,14 +80,12 @@ button {
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
-        margin-right: 76px; ;
+        margin-right: 76px;
     
         letter-spacing: 0.03em;
         text-transform: uppercase;
     
         color: #4D5AE5;
-        
-    
 }
 .header-logo {
     
@@ -102,6 +116,10 @@ button {
 
 .address {
     font-style: normal;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    
 }
 
 .address-link:hover,
@@ -117,15 +135,15 @@ button {
         letter-spacing: 0.02em;
     
         color: #434455;
-
 }
 
 .email-link {
-    margin-left: auto;
-    margin-right: 40px;
+margin-right: 40px;
 }
 
-.list-item {}
+.list-item {
+
+}
 
 
 .list-phone-link {}
@@ -134,7 +152,8 @@ button {
 
 .hero-section {
     background: #2E2F42;
-    
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 
@@ -150,17 +169,20 @@ button {
 }
 
 .hero-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
     font-family: inherit;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-    
-        letter-spacing: 0.04em;
-    
-        color: #FFFFFF;
-
-        background: #4D5AE5;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -171,20 +193,26 @@ background: #404BBF;
 
 /* MAIN */
 
-.visually-hidden {}
+.visually-hidden {
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    
+}
+.list-visually-hidden {
+    flex-wrap: nowrap;
+}
 
 .list-title {
+    margin-bottom: 8px;
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-    
-        letter-spacing: 0.02em;
-    
-        color: var(--subtitle-color);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--subtitle-color);
 }
 
 .list-lead {
-    
         font-size: 16px;
         line-height: 1.5;
     
@@ -193,19 +221,22 @@ background: #404BBF;
         color: #434455;
 }
 
-.section-two {}
+.section-two {
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 133px;
+}
 
 .title {
+    margin-bottom: 72px;
     font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-       
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-    
-    
-        color: #2E2F42;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
 }
 
 .section-two-item {}
@@ -214,6 +245,8 @@ background: #404BBF;
 
 .team-card {
     background: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .list-item-card{
@@ -286,5 +319,4 @@ background: #404BBF;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #F4F4FD;
-
 }
