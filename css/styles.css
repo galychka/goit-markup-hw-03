@@ -216,11 +216,13 @@ background: #404BBF;
 }
 .list-visually-hidden {
     flex-wrap: nowrap;
+    gap: 24px;
+    
 
 }
 
 .item-calc {
-flex-basis: calc((100% - 3 * 24px) / 4);
+width: calc((100% - 72px) / 4);
 
 }
 
@@ -252,12 +254,16 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     
         color: #434455;
 }
-/* Section two */
+/* Section three */
 .section-two {
     display: flex;
     align-items: center;
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.section-three {
+    gap: 24px;
 }
 
 .title {
@@ -287,6 +293,10 @@ flex-basis: calc((100% - 3 * 24px) / 4);
 .list-item-card {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+}
+
+.list-team-card {
+    gap: 24px;
 }
 
 .container-card-team {
