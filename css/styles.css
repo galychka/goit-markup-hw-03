@@ -346,9 +346,14 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-   
+
     padding: 0;
     border: 1px solid #E7E9FC;
+
+}
+
+.portfolio-list-item > .portfolio-calc {
+    flex-basis: calc(100% / 3);
 
 }
 
