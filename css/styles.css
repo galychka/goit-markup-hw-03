@@ -113,7 +113,9 @@ button {
     color: var(--subtitle-color);
 }
 
-.nav-item {
+.nav-item {}
+
+.nav-link {
     padding-top: 24px;
     padding-bottom: 24px;
 }
