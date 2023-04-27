@@ -75,8 +75,7 @@ button {
     display: flex;
     align-items: center;
     margin-right: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
 }
 
 .link-logo {
@@ -115,7 +114,8 @@ button {
 }
 
 .nav-item {
-    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address {
@@ -206,10 +206,25 @@ background: #404BBF;
 
 /* MAIN */
 
-.visually-hidden {
+.visually-hidden-section {
     padding: 120px 0;
     
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .list-visually-hidden {
     flex-wrap: nowrap;
     gap: 24px;
@@ -239,7 +254,7 @@ width: calc((100% - 72px) / 4);
 
 .list-lead {
     text-align: start;
-    
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -255,6 +270,7 @@ width: calc((100% - 72px) / 4);
 }
 /* Section three */
 .section-three {
+    padding-bottom: 120px;
 }
 
 .section-three-list {
@@ -429,9 +445,7 @@ margin-bottom: 0;
 }
 
 .link-logo-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: inline-block;
     padding: 0px;
     margin-bottom: 16px;
     margin-right: 76px;
