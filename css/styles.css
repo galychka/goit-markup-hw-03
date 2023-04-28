@@ -167,16 +167,15 @@ margin-left: auto;
 
 
 .hero-title {
-   background-color: #4D5AE5;
     margin-bottom: 48px;
     max-width: 496px;
     max-height: 120px;
     margin-left: auto;
     margin-right: auto;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
@@ -261,6 +260,7 @@ width: calc((100% - 72px) / 4);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-decoration: none;
 }
 
 .item-card-text {
@@ -408,11 +408,8 @@ margin-bottom: 0;
     text-decoration: none;
    
 }
+    
 
-.list-lead {
-    text-decoration: none;
-    margin-bottom: 8px
-}
 
 /* FOOTER */
 
@@ -450,7 +447,6 @@ margin-bottom: 0;
     display: inline-block;
     padding: 0px;
     margin-bottom: 16px;
-    margin-right: 76px;
     text-decoration: none;
 
     font-family: var(--secondary-font);
